@@ -1,0 +1,299 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "hii",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "What's up?",
+        "Greetings",
+        "Hello there"
+      ],
+      "responses": [
+        "Hey there! How can I assist you today?",
+        "Hello, thanks for stopping by!",
+        "Hi! What can I help you with?",
+        "Hi! How can I make your day better?",
+        "Greetings! How can I be of service?"
+      ],
+      "context": "initial"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later",
+        "Have a great day",
+        "Take care",
+        "Farewell"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you next time!",
+        "Take care!",
+        "Bye! Come back soon!",
+        "Farewell! We hope to see you again soon."
+      ],
+      "context": "exit"
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "I appreciate it",
+        "Many thanks",
+        "Thanks a million"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!",
+        "My pleasure!",
+        "We're glad to assist you!"
+      ],
+      "context": "gratitude"
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "Tell me about your products",
+        "What is in your collection?",
+        "Can you describe your product range?"
+      ],
+      "responses": [
+        "We offer a variety of jewelry including rings, necklaces, bracelets, and earrings.",
+        "Our collection includes fine jewelry, fashion jewelry, and custom designs.",
+        "We have a wide range of jewelry, from elegant rings to beautiful necklaces and more.",
+        "Explore our collection featuring unique designs in rings, necklaces, bracelets, and earrings."
+      ],
+      "context": "product_info"
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "What payment methods do you accept?",
+        "Can I use a gift card?",
+        "Do you offer financing options?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard, and Paypal.",
+        "You can pay with most major credit cards or Paypal.",
+        "We accept various payment methods including credit cards and Paypal.",
+        "We also accept gift cards and offer financing options for larger purchases."
+      ],
+      "context": "payment_info"
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "What's the delivery time?",
+        "Do you offer expedited shipping?",
+        "Can I track my order?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days.",
+        "Shipping usually takes between 2 to 4 days.",
+        "You should receive your delivery within 2-4 days.",
+        "We offer expedited shipping options. You can also track your order through our website."
+      ],
+      "context": "shipping_info"
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Make me laugh",
+        "Do you have any jokes?",
+        "Give me a laugh"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "Why don’t scientists trust atoms? Because they make up everything!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!"
+      ],
+      "context": "entertainment"
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Can I leave feedback?",
+        "I want to give feedback",
+        "How can I provide feedback?",
+        "I'd like to leave a comment",
+        "How do I share my experience?",
+        "Can I write a review?"
+      ],
+      "responses": [
+        "We'd love to hear your feedback! Please share your thoughts.",
+        "Your feedback is important to us. Please let us know how we did.",
+        "Feel free to leave a comment or suggestion.",
+        "You can share your experience by leaving a review on our website or contacting us directly."
+      ],
+      "context": "feedback_collection"
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need support",
+        "Can you help me with an issue?",
+        "I have a problem",
+        "I need assistance",
+        "How can I get support?",
+        "I need technical help"
+      ],
+      "responses": [
+        "I'm here to help! Please describe your issue.",
+        "What problem are you facing? I'll do my best to assist you.",
+        "Tell me more about the issue you're experiencing.",
+        "For technical support, please provide details about the issue so we can assist you promptly."
+      ],
+      "context": "customer_support"
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "Tell me something interesting",
+        "What's the weather like?",
+        "Do you have any fun facts?",
+        "How's your day going?",
+        "Tell me about a random fact",
+        "What's something cool?"
+      ],
+      "responses": [
+        "Did you know? Honey never spoils.",
+        "The Eiffel Tower can be 15 cm taller during the summer.",
+        "I'm having a great day! How about you?",
+        "Did you know that octopuses have three hearts?"
+      ],
+      "context": "casual_conversation"
+    },
+    {
+      "tag": "jewelry_types",
+      "patterns": [
+        "What types of jewelry do you have?",
+        "Can you tell me about your rings?",
+        "Do you have any bracelets?",
+        "What types of necklaces do you offer?",
+        "Can you describe your jewelry collection?",
+        "What kind of jewelry do you sell?"
+      ],
+      "responses": [
+        "We offer a variety of jewelry types, including rings, bracelets, necklaces, and earrings.",
+        "Our collection features rings, bracelets, necklaces, and earrings, each with unique designs.",
+        "You can find different types of jewelry such as engagement rings, wedding bands, charm bracelets, and statement necklaces.",
+        "Our product range includes elegant rings, versatile bracelets, stunning necklaces, and beautiful earrings."
+      ],
+      "context": "product_info"
+    },
+    {
+      "tag": "material_info",
+      "patterns": [
+        "What materials are your jewelry made of?",
+        "Do you use gold or silver?",
+        "Are your gemstones real?",
+        "Tell me about the materials used in your jewelry",
+        "What type of gold do you use?",
+        "Are the diamonds in your jewelry certified?"
+      ],
+      "responses": [
+        "Our jewelry is made from a range of materials including gold, silver, platinum, and precious gemstones.",
+        "We use high-quality materials such as 14k gold, sterling silver, and genuine gemstones in our jewelry.",
+        "Our pieces feature materials like diamonds, sapphires, rubies, and other fine gemstones.",
+        "We ensure that all gemstones used in our jewelry are ethically sourced and of high quality."
+      ],
+      "context": "material_details"
+    },
+    {
+      "tag": "custom_jewelry",
+      "patterns": [
+        "Do you offer custom jewelry services?",
+        "Can I design my own jewelry?",
+        "How can I get a custom piece made?",
+        "Tell me about your custom jewelry options",
+        "Can I order a bespoke ring?",
+        "How do I request a custom design?"
+      ],
+      "responses": [
+        "Yes, we offer custom jewelry services. You can design your own piece or work with our designers.",
+        "You can create a custom piece by discussing your ideas with us. We’ll guide you through the design process.",
+        "To order a bespoke piece, please contact us with your design ideas, and we'll help bring them to life.",
+        "We offer personalized jewelry design services. Reach out to us for more details on creating your custom piece."
+      ],
+      "context": "customization"
+    },
+    {
+      "tag": "returns",
+      "patterns": [
+        "Can I return a purchase?",
+        "What is your return policy?",
+        "How do I return an item?",
+        "Can I get a refund?",
+        "Tell me about your returns process",
+        "How do I exchange a product?"
+      ],
+      "responses": [
+        "Yes, you can return items within 30 days of purchase. Please visit our returns page for more details.",
+        "Our return policy allows for returns within 30 days. You can also request an exchange or refund.",
+        "To return a product, please follow the instructions on our returns page or contact our customer service.",
+        "Refunds are processed within 5-7 business days after receiving the returned item. Check our returns policy for more information."
+      ],
+      "context": "return_policy"
+    },
+    {
+      "tag": "track_order",
+      "patterns": [
+        "track my order",
+        "where is my order",
+        "order status",
+        "track order status",
+        "when will I receive my order",
+        "order update"
+      ],
+      "responses": [
+        "You can track your order by visiting our order tracking page or contacting our customer service.",
+        "To check the status of your order, please visit our order tracking page or contact us.",
+        "We'll send you updates on your order status via email. You can also track your order.",
+        "To track your order, please visit our order tracking page or contact our customer service team."
+      ],
+      "context": "order_tracking"
+    },
+    {
+      
+      "tag":"order_details",
+      "patterns": [
+        "track order by order id ",
+        "give me details of my shipping",
+        "order details"
+      ],
+      "responses": [
+        "To get order details, please visit our order tracking page and enter your order ID.",
+        "You can find your order details on our order tracking page or by contacting our customer service.",
+        "To get order details, please visit our order tracking page and enter your order ID."
+      ],
+      "context": "order_details"
+    }
+  ]
+}

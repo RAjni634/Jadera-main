@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadera</title>
+    <!--Css link-->
+    <link rel="stylesheet" href="/static/style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Jersey+15&family=Kaushan+Script&family=Noto+Sans+Tamil:wght@100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Satisfy&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="ShowCart">
+    <!--Header section-->
+    <header id="header">
+        <div class="header-top">
+            <span> Welcome to Jadera Jewelry</span>
+        </div>
+        <div class="navigation">
+            <a href="" class="logo">
+                <img src="/static/images/logo.jpg" alt="logo">
+            </a>
+
+            <!--menu btn-->
+            <input type="checkbox" class="menu-btn" id="menu-btn" />
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+
+
+
+            <!--menu bars-->
+            <ul class="menu">
+                <li><a href="base.html" class="active"> Home</a></li>
+                <li><a href="/templates/product.html"> Products</a></li>
+                <li><a href="/templates/testimonials.html"> Testimonials</a></li>
+                <li><a href="/templates/blog.html"> Blog</a></li>
+            </ul>
+
+            <!--right nav-->
+            <!--right nav-->
+            <div class="right-nav">
+                <a href="" class="nav-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <!-- Nav user link -->
+                <!-- User icon link -->
+                <a href="#" class="nav-user" id="login-link">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+                <!-- Modal popup container -->
+                <div id="login-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Login</h2>
+                            <span class="close-login" id="close-login">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <form id="login-form">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username"><br><br>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password"><br><br>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href="" class="nav-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!--Header section-->
+        <!--cart checkout-->
+        <div class="Cart-tab">
+            <h1>Shopping Cart</h1>
+            <div class="listofcart">
+                <div class="cart-message" style="display: block;">
+                    Your cart is empty.
+                </div>
+                <div class="product-item">
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="total-price-container">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-value">$0.00</span>
+                </div>
+
+            </div>
+
+
+            <div class="btn-cart">
+                <button class="close">Close</button>
+                <button class="Checkout">Check Out</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    </div>
+
+    </header>
+
+    <!--Header section-->
+
+    <!--Main section-->
+    <section id="main-banner">
+        <div class="main-banner-box">
+            <img src="/static/images/banner.jpg" alt="banner">
+            <div class="main-banner-text">
+                <h1>Jewelry Collection</h1>
+                <p>Designer Jewelry. Necklace, Bracelet , Earrings</p>
+                <a href="">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Main section-->
+
+    <!--Service info-->
+    <section class="what-we-provide">
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+
+            <div class="w-info-text">
+                <strong>Free Shipping</strong>
+                <p>Fast and free delivery</p>
+            </div>
+
+        </div>
+
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-regular fa-comments"></i>
+            </div>
+
+            <div class="w-info-text">
+                <strong>Support 24/7</strong>
+                <p>Always here for you</p>
+            </div>
+
+        </div>
+
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-regular fa-credit-card"></i>
+            </div>
+
+            <div class="w-info-text">
+                <strong>100% Payment Secure</strong>
+                <p>Shop with confidence</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Service info-->
+
+    <!--Product section-->
+    <section class="product-grid-half">
+
+        <div class="product-grid-box product-grid-box1">
+            <img src="/static/images/productbox5.jpg" alt="product">
+
+            <div class="product-grid-text">
+                <span>Elegant </span>
+                <strong>Bracelet</strong>
+                <a href=""> Shop Now</a>
+            </div>
+        </div>
+
+        <div class="product-grid-box product-grid-box2">
+            <img src="/static/images/productbox1.jpg" alt="product">
+
+            <div class="product-grid-text">
+                <span>Radiant</span>
+                <strong> Necklace</strong>
+                <a href=""> Shop Now</a>
+            </div>
+        </div>
+
+        <div class="product-grid-box product-grid-box3">
+            <img src="/static/images/productbox4.jpeg" alt="product">
+
+            <div class="product-grid-text">
+                <span>Gorgeous </span>
+                <strong> Earring Sets</strong>
+                <a href=""> Shop Now</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Product section-->
+
+
+    <!--new products-->
+    <section id="new_product">
+        <div class="new-product-heading">
+            <h2>Our Products</h2>
+            <p>Add our products to weekly lineup</p>
+        </div>
+        <div class="new-product-container">
+
+            <div class="swiper mySwiperNew-Product">
+                <div class="swiper-wrapper">
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-1.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title"> Shell Beach Necklace</a>
+                                <span>$25.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-2.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Heart Stone Necklace</a>
+                                <span>$15.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-3.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Rose Gold Ring Trio</a>
+                                <span>$20.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-4.jpeg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Leafy Elegance Ring</a>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-5.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Silver Shine Necklace</a>
+                                <span>$20.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-6.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Sea Blue Studs</a>
+                                <span>$25.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-7.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title"> Classy Emerald Earrings</a>
+                                <span>$35.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+                    <!--slide -->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+                            <a href="" class="new-product-img">
+                                <img src="/static/images/product-8.jpg" alt="product">
+                                <span>New</span>
+                                <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To
+                                    Cart</button>
+                            </a>
+
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">Elegant Stone Ring</a>
+                                <span>$25.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--slide end-->
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <!--category-->
+    <section class="category">
+        <div class="category-container">
+            <!-- box-->
+            <a href="#" class="category-box">
+                <img src="/static/images/mid-img4.jpg" alt="category">
+                <strong>Earring</strong>
+            </a>
+
+            <!-- box-->
+            <a href="#" class="category-box">
+                <img src="/static/images/mid-img2.jpg" alt="category">
+                <strong>Bracelet</strong>
+            </a>
+            <!-- box-->
+            <a href="#" class="category-box">
+                <img src="/static/images/mid-img1.jpg" alt="category">
+                <strong>Necklace</strong>
+            </a>
+
+            <!-- box-->
+            <a href="#" class="category-box">
+                <img src="/static/images/mid-img5.jpg" alt="category">
+                <strong>Ring</strong>
+            </a>
+
+
+        </div>
+
+    </section>
+
+    <!--new products-->
+
+    <!--fetaure products-->
+    <section id="new_product">
+        <div class="new-product-heading">
+            <h2>Featured Products</h2>
+            <p>Add ourfeatred products to wekly lineup</p>
+        </div>
+
+        <div class="feature-product-container">
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-9.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title"> Celestial Spark Ring</a>
+                    <span>$30.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-10.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Beaded Pearl Bracelet</a>
+                    <span>$25.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-11.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">White Stone Ring Set</a>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-12.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Classic Emerald Earrings</a>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-13.jpeg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title"> White Radiance Ring</a>
+                    <span>$20.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-14.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Pink Charm Bracelet</a>
+                    <span>$25.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-15.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Silver Bead Bracelet</a>
+                    <span>$20.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-16.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Jewelry Trio Set</a>
+                    <span>$30.00</span>
+                </div>
+            </div>
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-17.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Blue Heart Bracelet</a>
+                    <span>$35.00</span>
+                </div>
+            </div>
+
+            <div class="new-product-box">
+
+                <a href="" class="new-product-img">
+                    <img src="/static/images/product-18.jpg" alt="product">
+                    <span>New</span>
+                    <button class="new-product-cart-btn"> <i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+                </a>
+
+                <div class="new-product-text">
+                    <a href="#" class="new-product-title">Aquamarine Ring</a>
+                    <span>$15.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--testimonials-->
+    <section id="clients">
+
+        <div class="client-heading">
+            <h3>Testimonials</h3>
+            <p>What they say</p>
+        </div>
+
+        <div class="client-box-container">
+
+            <div class="swiper mySwiperTestimonials">
+                <div class="swiper-wrapper">
+                    <!--slide-->
+                    <div class="swiper-slide">
+                        <div class="client-box">
+                            <div class="client-profile">
+                                <img src="/static/images/client1.jpg" alt="">
+                                <div class="profile-text">
+                                    <strong>Carol</strong>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+
+                            <!--rating-->
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <!--comment-->
+                            <p>The jewelry is stunning! I received my order quickly, and the pieces were even more
+                                beautiful in person. Excellent quality and customer service. Highly recommended!</p>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide">
+                        <div class="client-box">
+                            <div class="client-profile">
+                                <img src="/static/images/client2.jpg" alt="">
+                                <div class="profile-text">
+                                    <strong>Christina</strong>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+
+                            <!--rating-->
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <!--comment-->
+                            <p>Absolutely delighted with my necklace and earrings. The craftsmanship is exquisite, and
+                                they sparkle beautifully.
+                                Great experience from ordering to delivery. </p>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide">
+                        <div class="client-box">
+                            <div class="client-profile">
+                                <img src="{{ url_for('static', filename='images/client3.jpg') }}" alt="">
+                                <div class="profile-text">
+                                    <strong>Christy</strong>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+
+                            <!--rating-->
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <!--comment-->
+                            <p>I bought a ring for my wife, and she was thrilled.
+                                The design is unique, and the quality is top-notch. Wonderful experience and exceptional
+                                service!</p>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide">
+                        <div class="client-box">
+                            <div class="client-profile">
+                                <img src="{{ url_for('static', filename='images/client4.jpg') }}" alt="">
+                                <div class="profile-text">
+                                    <strong>Khalifa</strong>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+
+                            <!--rating-->
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <!--comment-->
+                            <p>Gorgeous jewelry and impeccable service! My bracelet arrived on time and exceeded my
+                                expectations.
+                                The attention to detail is amazing. Will definitely be back for more!</p>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--slide-->
+                    <div class="swiper-slide">
+                        <div class="client-box">
+                            <div class="client-profile">
+                                <img src="{{ url_for('static', filename='images/client5.jpg') }}" alt="">
+                                <div class="profile-text">
+                                    <strong>Kate</strong>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+
+                            <!--rating-->
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <!--comment-->
+                            <p>The earrings I ordered are perfect! They arrived quickly, beautifully packaged, and look
+                                even better than in the photos. I’m very impressed with this shop!</p>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Blog Section-->
+    <section id="blog">
+        <!--heading-->
+        <div class="blog-heading">
+            <h3>Latest Blog</h3>
+            <span>There are latest blog posts</span>
+        </div>
+
+        <div class="blog-container">
+            <!--box-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img src="{{ url_for('static', filename='images/blog-img2.jpeg') }}" alt="blog">
+                </div>
+
+                <!--text-->
+                <div class="blog-text">
+                    <span>23 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title"> Green Gemstone Jewelry Collections</a>
+                    <p>Discover our exquisite collection featuring a stunning green gemstone
+                        bracelet and ring set. Perfect for adding a touch of elegance to any outfit</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+            </div>
+
+            <!--box-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img src="{{ url_for('static', filename='images/blog-img3.jpeg') }}" alt="blog">
+                </div>
+
+                <!--text-->
+                <div class="blog-text">
+                    <span>23 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title">Vintage Silver Elegance Collections</a>
+                    <p>Embrace timeless beauty with our vintage silver wear necklace.
+                        A classic piece that adds sophistication and charm to any jewelry collection.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+            </div>
+
+            <!--box-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img src="{{ url_for('static', filename='images/blog-img1.jpeg') }}" alt="blog">
+                </div>
+
+                <!--text-->
+                <div class="blog-text">
+                    <span>23 May 2024 / Jewelry</span>
+                    <a href="#" class="blog-title">Classy Earrings Collection</a>
+                    <p>Explore our classy earring collection, designed to add a touch of elegance and sophistication to
+                        your look.
+                        Perfect for any occasion or as a special gift.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-container">
+            <!--company box-->
+            <div class="footer-container-box">
+                <!--logo-->
+                <a href="#" class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo">
+                </a>
+                <!--caption--->
+                <p>Elegance in every piece. Discover timeless beauty.</p>
+
+                <!--social media links-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+            <!--links-box-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feateure</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+            </div>
+
+            <!--links-box-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feateure</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+            </div>
+
+            <!--links-box-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feateure</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!--bottom-->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made by T2 Solutions</span>
+            <span class="copyright">&#169; copyright 2024- T2 Solutions</span>
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiperNew-Product", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                740: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1000: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        /***testimoniala*/
+
+        var swiper = new Swiper(".mySwiperTestimonials", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        /*Hedder*/
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header')
+            if (window.scrollY > 0) {
+                header.classList.add('header-fix');
+            }
+            else {
+                header.classList.remove('header-fix');
+            }
+        });
+
+        // main.js
+
+        // Selecting necessary elements from the DOM
+        var iconCart = document.querySelector('.nav-cart');
+        var closeCart = document.querySelector('.close');
+        var body = document.querySelector('body');
+        var listProductHTML = document.querySelector('.listofcart');
+
+        var cart = {};
+
+        // Toggle the cart visibility when clicking on the cart icon
+        iconCart.addEventListener('click', function (event) {
+            event.preventDefault();
+            body.classList.toggle('ShowCart');
+        });
+
+        // Close the cart when clicking the close button
+        closeCart.addEventListener('click', function (event) {
+            event.preventDefault();
+            body.classList.remove('ShowCart');
+        });
+
+        // Event listener to handle clicks on the "Add to Cart" button
+        document.querySelectorAll('.new-product-cart-btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                var productBox = event.target.closest('.new-product-box');
+                var productName = productBox.querySelector('.new-product-title').textContent;
+                var productPrice = parseFloat(productBox.querySelector('.new-product-text span').textContent.replace(/[^\d\.]/g, ''));
+                var productImageSrc = productBox.querySelector('.new-product-img img').src;
+
+                // Check if the product already exists in the cart
+                if (cart[productName]) {
+                    // If the product exists, increment its quantity
+                    cart[productName].quantity++;
+                    cart[productName].totalPrice = (cart[productName].price * cart[productName].quantity).toFixed(2); // Update the product's total price
+                } else {
+                    // If the product doesn't exist, create a new cart item
+                    cart[productName] = {
+                        name: productName,
+                        price: productPrice,
+                        imageSrc: productImageSrc,
+                        quantity: 1,
+                        totalPrice: (productPrice * 1).toFixed(2) // Initialize the total price
+                    };
+                }
+
+                // Update the cart HTML
+                updateCartHTML();
+            });
+        });
+
+        // Function to update the cart HTML
+        function updateCartHTML() {
+            listProductHTML.innerHTML = '';
+            Object.keys(cart).forEach(productName => {
+                var product = cart[productName];
+                var cartItemHTML = `
+        <div class="product-item">
+          <div class="product-image">
+            <img src="${product.imageSrc}" alt="${product.name}">
+          </div>
+          <div class="product-name">${product.name}</div>
+          <div class="total-price">$${product.totalPrice}</div>
+          <div class="quantity">
+            <span class="minu" role="button" aria-label="Decrease quantity">-</span>
+            <span>${product.quantity}</span>
+            <span class="plus" role="button" aria-label="Increase quantity">+</span>
+            <i class="fa-solid fa-trash-can delete-product-btn" data-product-name="${productName}"></i>
+          </div>
+        </div>
+      `;
+                listProductHTML.innerHTML += cartItemHTML;
+            });
+        }
+
+        // Event listener to handle clicks inside the cart
+        listProductHTML.addEventListener('click', function (event) {
+            var targetElement = event.target;
+
+            if (targetElement.classList.contains('plus')) {
+                var quantityElement = targetElement.previousElementSibling;
+                var productName = targetElement.closest('.product-item').querySelector('.product-name').textContent;
+                var product = cart[productName];
+                if (product) {
+                    product.quantity++;
+                    product.totalPrice = (product.price * product.quantity).toFixed(2); // Update the product's total price
+                    quantityElement.textContent = product.quantity;
+                    updateCartItemPrice(productName); // Update the cart item price
+                    updateSubtotal(); // Update the subtotal value
+                }
+            } else if (targetElement.classList.contains('minu')) {
+                var quantityElement = targetElement.nextElementSibling;
+                var productName = targetElement.closest('.product-item').querySelector('.product-name').textContent;
+                var product = cart[productName];
+                if (product && product.quantity > 1) {
+                    product.quantity--;
+                    product.totalPrice = (product.price * product.quantity).toFixed(2); // Update the product's total price
+                    quantityElement.textContent = product.quantity;
+                    updateCartItemPrice(productName); // Update the cart item price
+                    updateSubtotal(); // Update the subtotal value
+                } else if (product && product.quantity === 1) {
+                    // Remove the product from the cart if the quantity is 1
+                    delete cart[productName];
+                    updateCartHTML();
+                    updateSubtotal(); // Update the subtotal value
+                }
+            }
+        });
+        // Function to update the cart item price
+        function updateCartItemPrice(productName) {
+            var product = cart[productName];
+            var productItems = listProductHTML.querySelectorAll('.product-item'); // Get all product item containers
+            for (var i = 0; i < productItems.length; i++) {
+                var productItem = productItems[i];
+                var productNameElement = productItem.querySelector('.product-name'); // Get the product name element
+                if (productNameElement && productNameElement.textContent === productName) {
+                    var totalPriceElement = productItem.querySelector('.total-price'); // Get the total price element
+                    totalPriceElement.textContent = `$${(product.price * product.quantity).toFixed(2)}`; // Update the total price
+                    break; // Exit the loop once we've found the correct product item
+                }
+            }
+        }
+
+        // Function to delete a product from the cart
+        function deleteProduct(productName) {
+            delete cart[productName];
+            updateCartHTML();
+            updateCartIconQuantity();
+            updateSubtotal();
+        }
+        // Event listener for delete product buttons
+        listProductHTML.addEventListener('click', function (event) {
+            if (event.target.classList.contains('delete-product-btn')) {
+                const productName = event.target.dataset.productName;
+                deleteProduct(productName);
+            }
+        });
+        // Select the cart icon quantity span
+        var cartIconQuantitySpan = iconCart.querySelector('span');
+
+        // Function to update the cart icon quantity
+        function updateCartIconQuantity() {
+            var totalQuantity = 0;
+            Object.keys(cart).forEach(productName => {
+                totalQuantity += cart[productName].quantity;
+            });
+            cartIconQuantitySpan.textContent = totalQuantity === 0 ? '0' : totalQuantity;
+        }
+
+        // Call the function whenever a product is added or the quantity is changed
+        // ...
+
+        // In the "Add to Cart" button click event listener
+        document.querySelectorAll('.new-product-cart-btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                // ...
+                updateCartHTML();
+                updateCartIconQuantity(); // Call the function here
+            });
+        });
+
+        // In the cart item quantity update event listener
+        listProductHTML.addEventListener('click', function (event) {
+            // ...
+            if (targetElement.classList.contains('plus')) {
+                // ...
+                updateCartItemPrice(productName);
+                updateCartIconQuantity(); // Call the function here
+            } else if (targetElement.classList.contains('minu')) {
+                // ...
+                if (product && product.quantity === 1) {
+                    delete cart[productName];
+                    updateCartHTML();
+                    updateCartIconQuantity(); // Call the function here
+                }
+            }
+        });
+        // Function to calculate the subtotal value of the shopping cart
+        function calculateSubtotal() {
+            var subtotal = 0;
+            Object.keys(cart).forEach(productName => {
+                subtotal += parseFloat(cart[productName].totalPrice);
+            });
+            return subtotal.toFixed(2);
+        }
+
+        // Function to update the subtotal value in the HTML
+        function updateSubtotal() {
+            var subtotalElement = document.querySelector('.subtotal-value');
+            subtotalElement.textContent = `$${calculateSubtotal()}`;
+        }
+
+        // Call the updateSubtotal function whenever a product is added or the quantity is changed
+        document.querySelectorAll('.new-product-cart-btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                // ...
+                updateCartHTML();
+                updateCartIconQuantity();
+                updateSubtotal(); // Call the function here
+            });
+        });
+
+        // In the cart item quantity update event listener
+        listProductHTML.addEventListener('click', function (event) {
+            // ...
+            if (targetElement.classList.contains('plus')) {
+                // ...
+                updateCartItemPrice(productName);
+                updateCartIconQuantity();
+                updateSubtotal(); // Call the function here
+            } else if (targetElement.classList.contains('minu')) {
+                // ...
+                if (product && product.quantity === 1) {
+                    delete cart[productName];
+                    updateCartHTML();
+                    updateCartIconQuantity();
+                    updateSubtotal(); // Call the function here
+                }
+            }
+        });
+
+        // Function to delete a product from the cart
+        function deleteProduct(productName) {
+            delete cart[productName];
+            updateCartHTML();
+            updateCartIconQuantity();
+            updateSubtotal();
+        }
+
+        // Event listener for delete product buttons
+        document.querySelectorAll('.delete-product-btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                const productName = event.target.dataset.productName;
+                deleteProduct(productName);
+            });
+        });
+
+        // Get the checkout button
+        const checkoutButton = $('.Checkout');
+
+        // Add an event listener to the checkout button
+        checkoutButton.on('click', function (event) {
+            // Prevent the default button behavior
+            event.preventDefault();
+
+            // Get the cart data
+            const cartData = JSON.stringify(cart);
+
+            // Create a new URL for the checkout page with the cart data as a query parameter
+            const checkoutUrl = `checkout.html?cart=${cartData}`;
+
+            // Redirect the user to the checkout page with a smooth transition
+            $('body').fadeOut(500, function () {
+                window.location.href = checkoutUrl;
+            });
+        });
+
+
+        // Get the user icon element
+        const userIcon = document.querySelector('.nav-user');
+
+        // Get the login modal element
+        const loginModal = document.getElementById('login-modal');
+
+        // Get the close button element
+        const closeButton = document.getElementById('close-login');
+
+        // Add event listener to user icon to open login modal
+        userIcon.addEventListener('click', () => {
+            loginModal.style.display = 'block';
+        });
+
+        // Add event listener to close button to close login modal
+        closeButton.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+    </script>
+
+    <!--new code-->
+    <div class="container">
+
+        <!-- Chatbox Section -->
+        <div class="chatbox">
+            <div class="chatbox__support">
+
+                <!--<div class="chatbot-main-body">-->
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com//color//48//000000//circled-user-female-skin-type-5--v1.png"
+                            alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Jadera support. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <!--extra icon starts -->
+                    <div class="chat-body">
+                        <div class="chat-options">
+                            <button class="option-btn" onclick="handleOptionClick('Shipping & Delivery')">
+                                Shipping & Delivery <span class="emoji">🚚</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('Returns & Exchanges')">
+                                Returns & Exchanges <span class="emoji">📦</span>
+                            </button>
+                            <button class="option-btn"
+                                onclick="handleOptionClick('Online Orders or In-Store Purchases')">
+                                Online Orders or In-Store Purchases <span class="emoji">🛒</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('Metals & Materials')">
+                                Metals & Materials <span class="emoji">✨</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('Size Guide')">
+                                Size Guide <span class="emoji">📏</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('Click and Collect')">
+                                Click and Collect <span class="emoji">🛍️</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('Feedback') ;  scrollToForm()">
+                                Feedback <span class="emoji">❗</span>
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick('SGift Cards')">
+                                Gift Cards <span class="emoji">🎁</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--extra icons ends-->
+                    <div id="chatMessages"></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button id="chatboxToggle"><img src="/static/images/chatbox-icon.svg" /></button>
+                <div id="notification" class="chatbox__notification">
+                    <img src="https://img.icons8.com/emoji/48/000000/exclamation-mark-emoji.png"
+                        alt="Notification Icon">
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+
+
+
+    <!--<script>
+    document.getElementById('customerForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let formData = new FormData(this);
+
+        fetch('/save_customer', {
+            method: 'POST',
+            body: JSON.stringify(Object.fromEntries(formData)),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.status === 'success') {
+                alert('Customer details saved successfully!');
+                this.reset();  // Reset form after submission
+            } else {
+                alert('There was an error saving your details.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    });
+</script>-->
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root | tojson }};
+    </script>
+    <script type="text/javascript" src="/static/app.js"></script>
+    <!--script for saving the chat-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+</body>
+
+</html>

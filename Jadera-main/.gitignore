@@ -1,0 +1,17 @@
+# Ignore the virtual environment directory
+.venv/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore large files (e.g., DLLs, libraries)
+*.dll
+*.lib

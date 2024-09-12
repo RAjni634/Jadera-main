@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name" : "Shell Beach Necklace",
+        "price" : "$25.00",
+        "image" : "images/product-1.jpg"
+    },
+    {
+        "id": 2,
+        "name" : "Heart Stone Necklace",
+        "price" : "$15.00",
+        "image" : "images/product-2.jpg"
+    },
+    {
+        "id": 3,
+        "name" : "Rose Gold Ring Trio",
+        "price" : "$20.00",
+        "image" : "images/product-3.jpg"
+    },
+    {
+        "id": 4,
+        "name" : "Leafy Elegance Ring",
+        "price" : "$30.00",
+        "image" : "images/product-4.jpg"
+    }
+]
